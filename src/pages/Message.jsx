@@ -1,8 +1,11 @@
-import React from 'react'
+import React from "react";
 import styles from "../assets/scss/Message.module.scss";
+import SetTitle from "../components/SetTitle";
 
 const Message = () => {
-    return (
+	SetTitle("Message");
+
+	return (
 		<div className={styles.Message}>
 			<div className={styles.Container}>
 				<h1>Principal Message</h1>
@@ -54,6 +57,6 @@ const Message = () => {
 			</div>
 		</div>
 	);
-}
+};
 
-export default Message
+export default Message;

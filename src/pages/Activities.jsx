@@ -10,8 +10,11 @@ import A8 from "../assets/images/A8.png";
 import A9 from "../assets/images/A9.png";
 import A10 from "../assets/images/A10.png";
 import styles from "../assets/scss/Activities.module.scss";
+import SetTitle from "../components/SetTitle";
 
 const Activities = () => {
+	SetTitle("Activities");
+	
 	return (
 		<div className={styles.Activities}>
 			<h1>Our Activities</h1>

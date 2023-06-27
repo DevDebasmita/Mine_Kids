@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import Logo2 from "../assets/images/Logo2.png";
 import styles from "../assets/scss/Franchise.module.scss";
+import SetTitle from "../components/SetTitle";
 
 const Franchise = () => {
+	SetTitle("Franchise");
+
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [number, setNumber] = useState("");

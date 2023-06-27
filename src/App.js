@@ -2,13 +2,17 @@ import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./assets/scss/index.scss";
 import Header from "./components/Header";
-import Home from "./pages/Home";
-import VisionAndMission from "./pages/VisionAndMission";
-import Message from "./pages/Message";
 import Activities from "./pages/Activities";
-import Facilities from "./pages/Facilities";
 import AdmissionFAQ from "./pages/AdmissionFAQ";
+import EarlyChildrenEducation from "./pages/EarlyChildrenEducation";
+import Facilities from "./pages/Facilities";
 import Franchise from "./pages/Franchise";
+import Gallery from "./pages/Gallery";
+import Home from "./pages/Home";
+import LevelOfLearning from "./pages/LevelOfLearning";
+import Message from "./pages/Message";
+import OnlineClasses from "./pages/OnlineClasses";
+import VisionAndMission from "./pages/VisionAndMission";
 
 function App() {
 	const [header, setHeader] = useState(false);
@@ -28,7 +32,11 @@ function App() {
 					<Route path="/AboutUs/VisionAndMission" element={<VisionAndMission />} />
 					<Route path="/AboutUs/Message" element={<Message />} />
 					<Route path="/Admission/AdmissionFAQ" element={<AdmissionFAQ />} />
+					<Route path="/Curricular/LevelOfLearning" element={<LevelOfLearning />} />
+					<Route path="/Curricular/EarlyChildrenEducation" element={<EarlyChildrenEducation />} />
+					<Route path="/Curricular/OnlineClasses" element={<OnlineClasses />} />
 					<Route path="/Facilities" element={<Facilities />} />
+					<Route path="/Gallery" element={<Gallery />} />
 					<Route path="/Franchise" element={<Franchise />} />
 				</Routes>
 			</BrowserRouter>

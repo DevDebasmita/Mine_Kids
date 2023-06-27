@@ -1,7 +1,10 @@
 import React from "react";
 import styles from "../assets/scss/AdmissionFAQ.module.scss";
+import SetTitle from "../components/SetTitle";
 
 const AdmissionFAQ = () => {
+	SetTitle("Admission FAQ");
+
 	return (
 		<div className={styles.AdmissionFAQ}>
 			<h1>Admission FAQ</h1>

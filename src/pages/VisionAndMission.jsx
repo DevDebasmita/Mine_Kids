@@ -4,8 +4,11 @@ import V2 from "../assets/images/V2.png";
 import V3 from "../assets/images/V3.png";
 import V4 from "../assets/images/V4.png";
 import styles from "../assets/scss/VisionAndMission.module.scss";
+import SetTitle from "../components/SetTitle";
 
 const VisionAndMission = () => {
+	SetTitle("Vision and Mission");
+	
 	return (
 		<div className={styles.VisionAndMission}>
 			<div className={styles.ContainerRight}>

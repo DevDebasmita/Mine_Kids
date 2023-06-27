@@ -60,12 +60,31 @@ const Header = ({ header }) => {
 							{Admission ? <FaChevronUp className="Icon" /> : <FaChevronDown className="Icon" />}
 							{Admission && (
 								<div className="PopupCont Admission" onClick={(e) => e.stopPropagation()}>
-									<span onClick={() => navigate("/Admission/AdmissionFAQ")}>Admission FAQ</span>
-									<span onClick={() => console.log("Admission From")}>Admission Form</span>
+									<span
+										onClick={() => {
+											navigate("/Admission/AdmissionFAQ");
+											setAdmission(false);
+										}}>
+										Admission FAQ
+									</span>
+									<span
+										onClick={() => {
+											console.log("Admission From");
+											setAdmission(false);
+										}}>
+										Admission Form
+									</span>
 								</div>
 							)}
 						</a>
 						<a
+							className={
+								pathname === "/Curricular/LevelOfLearning" ||
+								pathname === "/Curricular/EarlyChildrenEducation" ||
+								pathname === "/Curricular/OnlineClasses"
+									? "active"
+									: ""
+							}
 							onClick={(e) => e.preventDefault()}
 							onMouseEnter={() => setCurriculum(true)}
 							onMouseLeave={() => setCurriculum(false)}>
@@ -73,11 +92,27 @@ const Header = ({ header }) => {
 							{Curriculum ? <FaChevronUp className="Icon" /> : <FaChevronDown className="Icon" />}
 							{Curriculum && (
 								<div className="PopupCont Curriculum" onClick={(e) => e.stopPropagation()}>
-									<span onClick={() => console.log("Level of learning")}> Level of learning</span>
-									<span onClick={() => console.log("Early childhood Education")}>
+									<span
+										onClick={() => {
+											navigate("/Curricular/LevelOfLearning");
+											setCurriculum(false);
+										}}>
+										Level of learning
+									</span>
+									<span
+										onClick={() => {
+											navigate("/Curricular/EarlyChildrenEducation");
+											setCurriculum(false);
+										}}>
 										Early childhood Education
 									</span>
-									<span onClick={() => console.log("    Online Classes")}>Online Classes</span>
+									<span
+										onClick={() => {
+											navigate("/Curricular/OnlineClasses");
+											setCurriculum(false);
+										}}>
+										Online Classes
+									</span>
 								</div>
 							)}
 						</a>

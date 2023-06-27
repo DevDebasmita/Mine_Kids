@@ -28,8 +28,10 @@ import HI4 from "../assets/images/HI4.png";
 import HI5 from "../assets/images/HI5.png";
 import Logo2 from "../assets/images/Logo2.png";
 import styles from "../assets/scss/Home.module.scss";
+import SetTitle from "../components/SetTitle";
 
 const Home = () => {
+	SetTitle("Home");
 	const [admission, setAdmission] = useState(false);
 	return (
 		<div className={styles.Home}>
