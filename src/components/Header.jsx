@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import Logo from "../assets/images/Logo.png";
@@ -12,10 +12,16 @@ const Header = ({ header }) => {
 	const [Admission, setAdmission] = useState(false);
 	const [Curriculum, setCurriculum] = useState(false);
 
+	useEffect(() => {
+		document.getElementById("app").scrollTo(0, 0);
+	}, [pathname]);
+
 	return (
-		<div className="HeaderWrapper" style={{ background: header ? "#fff" : "" }}>
+		<div
+			className="HeaderWrapper"
+			style={{ background: header ? (pathname === "/Admission/AdmissionForm" ? "rgba(178,235,244,1)" : "#fff") : "" }}>
 			<div className="Header">
-				<div className="Logo">
+				<div className="Logo" onClick={() => navigate("/")}>
 					<img src={Logo} alt="Logo" />
 				</div>
 
@@ -52,7 +58,9 @@ const Header = ({ header }) => {
 							)}
 						</a>
 						<a
-							className={pathname === "/Admission/AdmissionFAQ" || pathname === "//" ? "active" : ""}
+							className={
+								pathname === "/Admission/AdmissionFAQ" || pathname === "/Admission/AdmissionForm" ? "active" : ""
+							}
 							onClick={(e) => e.preventDefault()}
 							onMouseEnter={() => setAdmission(true)}
 							onMouseLeave={() => setAdmission(false)}>
@@ -69,7 +77,7 @@ const Header = ({ header }) => {
 									</span>
 									<span
 										onClick={() => {
-											console.log("Admission From");
+											navigate("/Admission/AdmissionForm");
 											setAdmission(false);
 										}}>
 										Admission Form

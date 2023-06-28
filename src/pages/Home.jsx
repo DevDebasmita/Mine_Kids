@@ -5,7 +5,7 @@ import { FiInstagram, FiTwitter } from "react-icons/fi";
 import { PiTShirt } from "react-icons/pi";
 import { TbHorseToy } from "react-icons/tb";
 import { TfiBook } from "react-icons/tfi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import AdmissionBtn from "../assets/images/AdmissionBtn.png";
 import banner from "../assets/images/Group 212.png";
 import H1 from "../assets/images/H1.png";
@@ -32,7 +32,9 @@ import SetTitle from "../components/SetTitle";
 
 const Home = () => {
 	SetTitle("Home");
+	const navigate = useNavigate();
 	const [admission, setAdmission] = useState(false);
+
 	return (
 		<div className={styles.Home}>
 			{/* TODO: Carouse */}
@@ -69,7 +71,7 @@ const Home = () => {
 							Vestibulumem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur
 							leo. Sed maecenas tristique tincidunt cras. Vestibulum tincidunt sit tincidunt sit{" "}
 						</p>
-						<button>Read More</button>
+						<button onClick={() => navigate("/Home/OurSchool")}>Read More</button>
 					</div>
 				</div>
 
@@ -84,7 +86,7 @@ const Home = () => {
 							Vestibulumem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur
 							leo. Sed maecenas tristique tincidunt cras. Vestibulum tincidunt sit tincidunt sit{" "}
 						</p>
-						<button>Read More</button>
+						<button onClick={() => navigate("/Home/OurPurpose")}>Read More</button>
 					</div>
 					<div className={styles.Right}>
 						<img src={H2} alt="" />
@@ -170,7 +172,7 @@ const Home = () => {
 
 			<div className={styles.Container7}>
 				<h1>Our school Funtions</h1>
-				<Link to="/">See all Videos</Link>
+				<p onClick={() => navigate("/Functions")}>See all Videos</p>
 				<img src={H4} alt="" />
 				{/* <video src={H4}></video> */}
 			</div>
@@ -179,7 +181,7 @@ const Home = () => {
 				<h1>Funny videos</h1>
 				<div className={styles.Cont}>
 					<span></span>
-					<Link to="/">See all Videos</Link>
+					<Link to="/FunnyVideos">See all Videos</Link>
 				</div>
 				<div className={styles.ImageContainer}>
 					<div className={styles.VideoWrapper}>

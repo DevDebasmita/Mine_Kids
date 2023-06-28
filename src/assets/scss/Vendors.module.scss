@@ -1,0 +1,141 @@
+.Vendors {
+	width: 100%;
+	background: url("../images/background.png");
+	padding: 14.3rem 10.3rem 15.8rem 9.8rem;
+
+	h1 {
+		color: #1c527b;
+		font-size: 6rem;
+		font-family: "Lato";
+		letter-spacing: 0.24rem;
+		text-align: center;
+	}
+	p {
+		color: #999;
+		font-size: 1.4rem;
+		font-family: "Lato";
+		text-align: center;
+		margin-bottom: 2.3rem;
+	}
+	h2 {
+		color: #0d4672;
+		font-size: 4rem;
+		font-family: "Lato";
+		letter-spacing: 0.16rem;
+		text-transform: capitalize;
+		font-weight: 400;
+		margin-bottom: 1.1rem;
+	}
+	span {
+		display: block;
+		width: 10.9rem;
+		height: 0.5rem;
+		border-radius: 10rem;
+		background: #0d4672;
+		margin-bottom: 4rem;
+	}
+
+	.Container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 6.9rem;
+		row-gap: 4rem;
+
+		.BoxWrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.Box {
+				width: 50.5rem;
+				height: 32.1rem;
+				border-radius: 4rem;
+				background: #fff;
+				box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1), -4px -4px 10px 0px rgba(0, 0, 0, 0.1);
+				padding: 4rem 2rem 0 4rem;
+
+				.Top {
+					display: flex;
+					gap: 7rem;
+					margin-bottom: 2.5rem;
+
+					.Left {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						gap: 1.3rem;
+						img {
+							border-radius: 50%;
+							width: 10rem;
+							height: 10rem;
+						}
+						p {
+							color: #000;
+							font-size: 1.8rem;
+							font-family: "Lato";
+						}
+					}
+
+					.Right {
+						flex: 1;
+
+						h2 {
+							color: #0d4672;
+							font-size: 3rem;
+							font-family: "Lato";
+							margin-bottom: 1.8rem;
+						}
+						.LocationCont {
+							display: flex;
+							align-items: center;
+							gap: 1.2rem;
+							margin-bottom: 1.5rem;
+
+							.Cont {
+								p {
+									color: #161616;
+									font-size: 1.96rem;
+									font-family: "Lato";
+									font-weight: 500;
+									margin-bottom: 0;
+									text-align: left;
+
+									&:last-child {
+										color: #999;
+										font-size: 1.4rem;
+										font-family: "Lato";
+									}
+								}
+							}
+						}
+
+						.CallContainer {
+							display: flex;
+							align-items: center;
+							gap: 1.2rem;
+
+							p {
+								color: #161616;
+								font-size: 1.96rem;
+								font-family: "Lato";
+								font-weight: 500;
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+				.Bottom {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					a {
+						color: #0d4672;
+						font-size: 2.8rem;
+						font-family: "Lato";
+						text-decoration-line: underline;
+					}
+				}
+			}
+		}
+	}
+}

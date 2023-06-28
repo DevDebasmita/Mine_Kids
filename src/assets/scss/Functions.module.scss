@@ -1,0 +1,29 @@
+.Functions {
+	width: 100%;
+	background: url("../images/background.png");
+	padding: 14.7rem 8.8rem 10rem 8.8rem;
+
+	h1 {
+		color: #0d4672;
+		font-size: 5.2718rem;
+		font-family: "Lato";
+		line-height: 113.5%;
+		letter-spacing: 0.1318rem;
+		margin-bottom: 7.5rem;
+		text-align: center;
+	}
+
+	.Wrapper {
+		width: 100%;
+		height: 50rem;
+		margin-bottom: 8rem;
+		border-radius: 3rem;
+		overflow: hidden;
+
+		img,
+		video {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
