@@ -56,8 +56,8 @@ const Form4 = ({ active, setActive }) => {
 					</div>
 
 					<div className={styles.ButtonContainer}>
-						<button onClick={() => setActive("form3")}>Previous</button>
-						<button onClick={handelForm4Submit}>Submit</button>
+						<a href="#top" onClick={() => setActive("form3")}>Previous</a>
+						<a href="#top" onClick={handelForm4Submit}>Submit</a>
 					</div>
 				</div>
 			</div>

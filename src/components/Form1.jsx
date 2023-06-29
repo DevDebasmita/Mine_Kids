@@ -105,7 +105,7 @@ const Form1 = ({ active, setActive }) => {
 					</div>
 				</div>
 
-				<button onClick={handelForm1Submit}>Next</button>
+				<a href="#top" onClick={handelForm1Submit}>Next</a>
 			</div>
 		</div>
 	);

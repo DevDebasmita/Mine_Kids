@@ -9,8 +9,8 @@ const AdmissionForm = () => {
 	const [active, setActive] = useState("form1");
 
 	return (
-		<div className={styles.AdmissionForm}>
-			<div className={styles.MainContainer}>
+		<div className={styles.AdmissionForm} id="top">
+			<div className={styles.MainContainer} >
 				<div className={styles.ContentContainer}>
 					<Form1 active={active} setActive={setActive} />
 					<Form2 active={active} setActive={setActive} />
