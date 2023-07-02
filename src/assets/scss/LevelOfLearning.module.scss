@@ -37,8 +37,22 @@
 				background: #0d4672;
 				margin-bottom: 1.1rem;
 			}
+			.Text {
+				width: 53rem;
+				height: 33.3rem;
+				overflow-y: scroll;
+				scrollbar-width: none;
+				padding-right: 0.5rem;
+
+				&::-webkit-scrollbar {
+					width: 0.5rem;
+				}
+				&::-webkit-scrollbar-thumb {
+					border-radius: 2rem;
+					background: #0d4672;
+				}
+			}
 			p {
-				width: 52.3rem;
 				color: #0d4672;
 				font-size: 1.6rem;
 				font-family: "Lato";
@@ -84,8 +98,22 @@
 				background: #0d4672;
 				margin-bottom: 1.1rem;
 			}
+			.Text {
+				width: 53rem;
+				height: 33.3rem;
+				overflow-y: scroll;
+				scrollbar-width: none;
+				padding-right: 0.5rem;
+
+				&::-webkit-scrollbar {
+					width: 0.5rem;
+				}
+				&::-webkit-scrollbar-thumb {
+					border-radius: 2rem;
+					background: #0d4672;
+				}
+			}
 			p {
-				width: 52.3rem;
 				color: #0d4672;
 				font-size: 1.6rem;
 				font-family: "Lato";

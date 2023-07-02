@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import O1 from "../assets/images/O1.png";
 import O2 from "../assets/images/O2.png";
 import O3 from "../assets/images/O3.png";
@@ -10,7 +10,6 @@ import O8 from "../assets/images/O8.png";
 import O9 from "../assets/images/O9.png";
 import styles from "../assets/scss/OnlineClasses.module.scss";
 import SetTitle from "../components/SetTitle";
-import { useState } from "react";
 
 const OnlineClasses = () => {
 	SetTitle("Online Classes");
@@ -30,8 +29,8 @@ const OnlineClasses = () => {
 		<div className={styles.OnlineClasses}>
 			<div className={styles.Container1}>
 				<h3>
-					BHUBANESWAR'S MOST LOVED & AWARDED PRESCHOOL NOW BEGINS ITS ONLINE CLASSES,WITH THE AIM TO ENSURE THE HOLISTIC
-					DEVELOPMENT OF STUDENTS.
+					BHUBANESWAR'S MOST LOVED & AWARDED PRESCHOOL NOW BEGINS ITS ONLINE CLASSES, WITH THE AIM TO ENSURE THE
+					HOLISTIC DEVELOPMENT OF STUDENTS.
 				</h3>
 				<div className={styles.ImageCont}>
 					<img src={O1} alt="" />
@@ -41,27 +40,16 @@ const OnlineClasses = () => {
 			</div>
 
 			<div className={styles.Container2}>
-				<h2>Online Classes</h2>
+				<h2>ONLINE CLASSES AT MINE KIDS</h2>
 				<span></span>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed maecenas
-					tristique tincidunt cras. Vestibulum tincidunt sit Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Duis mollis ut curabitur curabitur leo. Sed maecenas tristique tincidunt cras. Vestibulumem ipsum dolor sit
-					amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed maecenas tristique tincidunt
-					cras. Vestibulum tincidunt sit tincidunt sit Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-					mollis ut curabitur curabitur leo. Sed maecenas tristique tincidunt cras. Vestibulum tincidunt sit Lorem ipsum
-					dolor sit amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed maecenas tristique
-					tincidunt cras. Vestibulumem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ut curabitur
-					curabitur leo. Sed maecenas tristique tincidunt cras. Vestibulum tincidunt sit tincidunt sit Lorem ipsum dolor
-					sit amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed maecenas tristique
-					tincidunt cras. Vestibulum tincidunt sit Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis
-					ut curabitur curabitur leo. Sed maecenas tristique tincidunt cras. Vestibulumem ipsum dolor sit amet,
-					consectetur adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed maecenas tristique tincidunt cras.
-					Vestibulum tincidunt sit tincidunt sit Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ut
-					curabitur curabitur leo. Sed maecenas tristique tincidunt cras. Vestibulum tincidunt sit Lorem ipsum dolor sit
-					amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed maecenas tristique tincidunt
-					cras. Vestibulumem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur leo.
-					Sed maecenas tristique tincidunt cras. Vestibulum tincidunt sit tincidunt sit{" "}
+					We are all witnessing an unprecedented challenge posed by the global outbreak of COVID-19 Pandemic. As the
+					world hunkers down to halt the spread of the virus, it's also essential that we do not let the Pandemic act as
+					a barrier to the learning process of the little ones. In line with this view, the academic team of Mine Kids
+					Bhubaneswar has come up with a special Program of Online Classes for the session 2020-21, with prime focus on
+					the Holistic Development of the children. Our Online Playschool Program includes two classes daily with a
+					duration of 40 minutes each. Our daily classes are a healthy amalgamation of conceptual and co-curricular
+					activities, fostering the overall development of the tiny tots.
 				</p>
 			</div>
 
@@ -112,16 +100,59 @@ const OnlineClasses = () => {
 						<img src={O4} alt="" />
 					</div>
 					<div className={styles.Right}>
+						<h2>THE MIRACLE YEAR</h2>
+						<span></span>
+						<p>
+							The mental and physical growth of children is believed to be the most rapid between 2 to 4 years by
+							experts.
+						</p>
+						<p>
+							At Mine Kids, we certainly know that the formative years of a childâ€™s life are of utmost importance
+							for development, which is why, our child-centric approach ensures the perfect holistic development at
+							this tender age. With our scientifically designed curriculum and innovative teaching practices, the
+							Online Classes at Mine Kids prepare children for life by imparting not only age-appropriate knowledge
+							but also enhancing their talents and empowering them with life skills to ensure their overall
+							development that includes:
+						</p>
+						<p>• Yoga Class</p>
+					</div>
+				</div>
+				<div className={styles.ContainerLeft}>
+					<div className={styles.Left}>
+						<h2>Intellectual Development</h2>
+						<span></span>
+						<p>
+							The IQ of a child just doesn't depend on the genes alone, but the opportunities he/she gets to use
+							his/her mind. Our Online Classes offer the best opportunities to stimulate intellectual curiosity in
+							the little ones so as to help them understand the world around them. We organise theme based
+							activities where the toddlers learn about the monthly theme & concepts such as:
+						</p>
+						<p>• People Around Us</p>
+						<p>• Community Helpers</p>
+						<p>• My Family </p>
+						<p>• Fruits & Vegetables </p>
+						<p>• Shapes</p>
+						<p>• Numbers</p>
+						<p>• Vehicles Around Us</p>
+					</div>
+					<div className={styles.Right}>
+						<img src={O5} alt="" />
+					</div>
+				</div>
+				<div className={styles.ContainerRight}>
+					<div className={styles.Left}>
+						<img src={O4} alt="" />
+					</div>
+					<div className={styles.Right}>
 						<h2>PHYSICAL DEVELOPMENT</h2>
 						<span></span>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed
-							maecenas tristique tincidunt cras. Vestibulum tincidunt sit Lorem ipsum dolor sit amet, consectetur
-							adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed maecenas tristique tincidunt cras.
-							Vestibulumem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur
-							leo. Sed maecenas tristique tincidunt cras. Vestibulum tincidunt sit tincidunt sit ipsum dolor sit
-							amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed maecenas tristique{" "}
+							The childhood of every child should be no less than a carnival of good memories, love and enjoyment
+							and our Online Classes ensure they get ample opportunities to run, play and simply be themselves!
+							Natural growth occurs best when children have lots of fun. And, all that fun happens at our:
 						</p>
+						<p>• Dance Class</p>
+						<p>• Yoga Class</p>
 					</div>
 				</div>
 				<div className={styles.ContainerLeft}>
@@ -129,13 +160,16 @@ const OnlineClasses = () => {
 						<h2>LANGUAGE DEVELOPMENT</h2>
 						<span></span>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed
-							maecenas tristique tincidunt cras. Vestibulum tincidunt sit Lorem ipsum dolor sit amet, consectetur
-							adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed maecenas tristique tincidunt cras.
-							Vestibulumem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur
-							leo. Sed maecenas tristique tincidunt cras. Vestibulum tincidunt sit tincidunt sit ipsum dolor sit
-							amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed maecenas tristique{" "}
+							What good is knowledge that cannot be expressed! Language learning provides the foundation for all
+							later learning. By the time children enter preschool, they are already using a language at home. Our
+							Online Classes provide them with the right activities like rhymes recitation and story narration to
+							increase their vocabulary steadily and rapidly. We focus on all aspects of language learning, namely:
 						</p>
+						<p>• Listening</p>
+						<p>• Speaking</p>
+						<p>• Reading </p>
+						<p>• Writing </p>
+						<p>• Oral Expression</p>
 					</div>
 					<div className={styles.Right}>
 						<img src={O5} alt="" />
@@ -149,13 +183,14 @@ const OnlineClasses = () => {
 						<h2>development of creative expression</h2>
 						<span></span>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed
-							maecenas tristique tincidunt cras. Vestibulum tincidunt sit Lorem ipsum dolor sit amet, consectetur
-							adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed maecenas tristique tincidunt cras.
-							Vestibulumem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur
-							leo. Sed maecenas tristique tincidunt cras. Vestibulum tincidunt sit tincidunt sit ipsum dolor sit
-							amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed maecenas tristique{" "}
+							Each child has inborn creativity. All we need to do is give them encouragement and opportunities for
+							free play, particularly dramatic and constructive play which will foster creativity in them. We
+							provide children with stimulating experiences by arranging different types of online activities where
+							they can nurture their imagination & discover their talents like:
 						</p>
+						<p>• Dancing </p>
+						<p>• Art & craft </p>
+						<p>• Clay Modelling</p>
 					</div>
 				</div>
 				<div className={styles.ContainerLeft}>
@@ -163,12 +198,10 @@ const OnlineClasses = () => {
 						<h2>Socio-Emotional Development</h2>
 						<span></span>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed
-							maecenas tristique tincidunt cras. Vestibulum tincidunt sit Lorem ipsum dolor sit amet, consectetur
-							adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed maecenas tristique tincidunt cras.
-							Vestibulumem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur
-							leo. Sed maecenas tristique tincidunt cras. Vestibulum tincidunt sit tincidunt sit ipsum dolor sit
-							amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed maecenas tristique{" "}
+							Each child has his/her own unique â€˜Personalityâ€™ which is the outcome of inheritance,
+							social/cultural groups, different sorts of interactions, regular appreciation and exposure. Our Online
+							Classes provide the right kind of experience, which forms the learning ground for the child about
+							right behaviour, friendship, & sharing.
 						</p>
 					</div>
 					<div className={styles.Right}>
@@ -184,24 +217,18 @@ const OnlineClasses = () => {
 						<h2>Celebrations</h2>
 						<span></span>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed
-							maecenas tristique tincidunt cras. Vestibulum tincidunt sit Lorem ipsum dolor sit amet, consectetur
-							adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed maecenas tristique tincidunt cras.
-							Vestibulumem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur
-							leo. Sed maecenas tristique tincidunt cras. Vestibulum tincidunt sit tincidunt sit ipsum dolor sit
-							amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed maecenas tristique{" "}
+							Building an understanding of the cultures and traditions at such a tender age will certainly leave
+							imprints of patriotism in their hearts forever. We love celebrating each festival with immense joy. Be
+							it Independence Day, Earth Day, Janmashtami, Baisakhi, Diwali, Holi, Eid or Christmas.
 						</p>
 					</div>
 					<div className={styles.Text}>
 						<h2>birthday bashes </h2>
 						<span></span>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed
-							maecenas tristique tincidunt cras. Vestibulum tincidunt sit Lorem ipsum dolor sit amet, consectetur
-							adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed maecenas tristique tincidunt cras.
-							Vestibulumem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur
-							leo. Sed maecenas tristique tincidunt cras. Vestibulum tincidunt sit tincidunt sit ipsum dolor sit
-							amet, consectetur adipiscing elit. Duis mollis ut curabitur curabitur leo. Sed maecenas tristique{" "}
+							Birthday celebrations are the perfect source of boosting the positive self-concept of the children. We
+							organize a special Virtual Birthday Party for our tiny tots to make their birthday celebrations
+							memorable with fun activities like, House Hunt, Simon Says, Guess the Sounds, etc.
 						</p>
 					</div>
 				</div>

@@ -31,6 +31,18 @@
 		margin-bottom: 6.5rem;
 	}
 
+	ul {
+		margin-left: 2rem;
+		margin-bottom: 6.5rem;
+		li {
+			width: 100%;
+			color: #0d4672;
+			font-size: 1.6rem;
+			font-family: "Lato";
+			line-height: 216%;
+		}
+	}
+
 	.PartnerContainer {
 		margin: 0 auto;
 		margin-top: 21.2rem;
@@ -127,8 +139,8 @@
 				color: #fff;
 				font-size: 1.4rem;
 				font-family: "Lato";
-				
-				&:hover{
+
+				&:hover {
 					background: #002e52;
 				}
 			}

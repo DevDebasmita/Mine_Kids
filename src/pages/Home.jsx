@@ -7,7 +7,11 @@ import { TbHorseToy } from "react-icons/tb";
 import { TfiBook } from "react-icons/tfi";
 import { Link, useNavigate } from "react-router-dom";
 import AdmissionBtn from "../assets/images/AdmissionBtn.png";
-import banner from "../assets/images/Group 212.png";
+import Banner1 from "../assets/images/Banner1.png";
+import Banner2 from "../assets/images/Banner2.png";
+import Banner3 from "../assets/images/Banner3.png";
+import Banner4 from "../assets/images/Banner4.png";
+import Banner5 from "../assets/images/Banner5.png";
 import H1 from "../assets/images/H1.png";
 import H2 from "../assets/images/H2.png";
 import H3 from "../assets/images/H3.png";
@@ -15,12 +19,13 @@ import H4 from "../assets/images/H4.png";
 import H5 from "../assets/images/H5.png";
 import H6 from "../assets/images/H6.png";
 import H7 from "../assets/images/H7.png";
-import H9 from "../assets/images/H9.png";
-import HCI1 from "../assets/images/HCI1.png";
-import HCI2 from "../assets/images/HCI2.png";
-import HCI3 from "../assets/images/HCI3.png";
-import HCI4 from "../assets/images/HCI4.png";
-import HCI5 from "../assets/images/HCI5.png";
+// import HCI1 from "../assets/images/HCI1.png";
+// import HCI2 from "../assets/images/HCI2.png";
+// import HCI3 from "../assets/images/HCI3.png";
+// import HCI4 from "../assets/images/HCI4.png";
+// import HCI5 from "../assets/images/HCI5.png";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 import HI1 from "../assets/images/HI1.png";
 import HI2 from "../assets/images/HI2.png";
 import HI3 from "../assets/images/HI3.png";
@@ -28,6 +33,7 @@ import HI4 from "../assets/images/HI4.png";
 import HI5 from "../assets/images/HI5.png";
 import Logo2 from "../assets/images/Logo2.png";
 import styles from "../assets/scss/Home.module.scss";
+import ContactUsMap from "../components/ContactUsMap";
 import SetTitle from "../components/SetTitle";
 
 const Home = () => {
@@ -37,10 +43,47 @@ const Home = () => {
 
 	return (
 		<div className={styles.Home}>
-			{/* TODO: Carouse */}
-			<div className={styles.Container1}>
-				<img src={banner} alt="" />
-				<button>Read More</button>
+			<div className={`${styles.Container1} Container1`}>
+				<AliceCarousel
+					mouseTracking
+					autoPlay
+					infinite
+					autoPlayStrategy={"none"}
+					autoPlayInterval={5000}
+					disableButtonsControls
+					responsive={{
+						0: {
+							items: 1,
+						},
+					}}>
+					<div
+						className={styles.BannerWrapper}
+						onDragStart={(e) => e.preventDefault()}
+						onClick={() => navigate("/Home/OurSchool")}>
+						<img src={Banner1} alt="Banner1" />
+					</div>
+					<div
+						className={styles.BannerWrapper}
+						onDragStart={(e) => e.preventDefault()}
+						onClick={() => navigate("/ContactUs")}>
+						<img src={Banner2} alt="Banner2" />
+					</div>
+					<div
+						className={styles.BannerWrapper}
+						onDragStart={(e) => e.preventDefault()}
+						onClick={() => navigate("/AboutUs/VisionAndMission")}>
+						<img src={Banner3} alt="Banner3" />
+					</div>
+					<div className={styles.BannerWrapper} onDragStart={(e) => e.preventDefault()}>
+						<img src={Banner4} alt="Banner4" />
+					</div>
+					<div
+						className={styles.BannerWrapper}
+						onDragStart={(e) => e.preventDefault()}
+						onClick={() => navigate("/ContactUs")}>
+						<img src={Banner5} alt="Banner5" />
+					</div>
+				</AliceCarousel>
 			</div>
 
 			<div className={styles.Container2}>
@@ -51,8 +94,8 @@ const Home = () => {
 					<img src={AdmissionBtn} alt="" />
 					{admission && (
 						<div>
-							<Link>Scratch From</Link>
-							<Link>Admission From</Link>
+							<Link to="/Admission/AdmissionForm">Scratch From</Link>
+							<Link to="/Admission/AdmissionForm">Admission From</Link>
 						</div>
 					)}
 				</div>
@@ -131,7 +174,7 @@ const Home = () => {
 				</div>
 
 				<div className={styles.BlueBackground}>
-					<h2>Our Gallery</h2>
+					{/* <h2>Our Gallery</h2>
 					<p>View all</p>
 
 					<div className={styles.ImageContainer}>
@@ -144,7 +187,7 @@ const Home = () => {
 							<img src={HCI4} alt="" />
 							<img src={HCI5} alt="" />
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 
@@ -198,19 +241,7 @@ const Home = () => {
 			</div>
 
 			<div className={styles.Container9}>
-				<div className={styles.Left}>
-					<h1>Visit us</h1>
-					<h1>Mind school pre-school</h1>
-					<p>MDL-7, Shanti Vihar,</p>
-					<p>H.B Colony Baramunda, </p>
-					<p>Bhubaneswar</p>
-					<Link to="https://goo.gl/maps/LgMFarcqmtQYGVL68" target="_blank">
-						View in Map
-					</Link>
-				</div>
-				<div className={styles.Right}>
-					<img src={H9} alt="" />
-				</div>
+				<ContactUsMap />
 			</div>
 
 			<div className={styles.Container10}>
@@ -225,7 +256,7 @@ const Home = () => {
 						<Link to="/OurCurriculum">Our Curriculum</Link>
 					</div>
 					<div className={styles.C3}>
-						<h2>About us</h2>
+						<h2>More</h2>
 						<Link to="/Programme">Pre-school programme</Link>
 						<Link to="/Blogs">Blogs</Link>
 					</div>

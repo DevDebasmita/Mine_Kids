@@ -15,7 +15,6 @@
 	.Container {
 		width: 100%;
 		margin-bottom: 8rem;
-		
 
 		.Heading {
 			width: 100%;
@@ -50,6 +49,26 @@
 			font-family: "Lato";
 			line-height: 216%;
 			margin-bottom: 4rem;
+		}
+		
+		ul {
+			margin-top: -3rem;
+			margin-bottom: 4rem;
+			margin-left: 2rem;
+			li {
+				color: #0d4672;
+				font-size: 1.6rem;
+				font-family: "Lato";
+				line-height: 216%;
+			}
+		}
+
+		.Para{
+			margin-top: -4rem;
+			margin-bottom: 4rem;
+			p{
+				margin-bottom: 0rem;
+			}
 		}
 	}
 }

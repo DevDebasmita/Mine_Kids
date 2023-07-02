@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { FiUpload } from "react-icons/fi";
-import { Link } from "react-router-dom";
 import C1 from "../assets/images/C1.png";
 import C2 from "../assets/images/C2.png";
 import C3 from "../assets/images/C3.png";
 import C4 from "../assets/images/C4.png";
-import H9 from "../assets/images/H9.png";
 import styles from "../assets/scss/ContactUs.module.scss";
+import ContactUsMap from "../components/ContactUsMap";
 import SetTitle from "../components/SetTitle";
 
 const ContactUs = () => {
@@ -27,19 +26,7 @@ const ContactUs = () => {
 			<h1>Contact Us</h1>
 
 			<div className={styles.Container1}>
-				<div className={styles.Left}>
-					<h1>Visit us</h1>
-					<h1>Mind school pre-school</h1>
-					<p>MDL-7, Shanti Vihar,</p>
-					<p>H.B Colony Baramunda, </p>
-					<p>Bhubaneswar</p>
-					<Link to="https://goo.gl/maps/LgMFarcqmtQYGVL68" target="_blank">
-						View in Map
-					</Link>
-				</div>
-				<div className={styles.Right}>
-					<img src={H9} alt="" />
-				</div>
+				<ContactUsMap />
 			</div>
 
 			<div className={styles.Container2}>

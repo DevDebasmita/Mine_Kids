@@ -130,13 +130,13 @@ const Header = ({ header }) => {
 						<NavLink to="/ContactUs">Contact Us</NavLink>
 					</div>
 
-					<div className="contactContainer">
+					<a href="tel:+91 63718 64512" className="contactContainer">
 						<img src={call} alt="Call" />
 						<div>
 							<span>Call Us Now</span>
-							<p>+91&nbsp;981XXXXX55</p>
+							<p>+91&nbsp;6371864512</p>
 						</div>
-					</div>
+					</a>
 				</nav>
 			</div>
 		</div>
