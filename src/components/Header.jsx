@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import FloatingCall from "../assets/images/FloatingCall.png";
+import FloatingWhatsApp from "../assets/images/FloatingWhatsApp.png";
 import Logo from "../assets/images/Logo.png";
 import "../assets/scss/Header.scss";
 import call from "../assets/svg/call.svg";
@@ -138,6 +140,15 @@ const Header = ({ header }) => {
 						</div>
 					</a>
 				</nav>
+			</div>
+
+			<div className="FloatingBox">
+				<a href="https://wa.me/6371864512" target="_blank">
+					<img src={FloatingWhatsApp} alt="" />
+				</a>
+				<a href="tel:+91 6371864512">
+					<img src={FloatingCall} alt="" />
+				</a>
 			</div>
 		</div>
 	);
